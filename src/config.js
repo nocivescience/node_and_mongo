@@ -1,4 +1,5 @@
-import {config} from 'dotenv';
+// import {config} from 'dotenv';
+const {config}= require('dotenv')
 config();
 const configurations = {
     port: process.env.PORT || 3000,
@@ -7,4 +8,4 @@ const configurations = {
         port: process.env.DB_PORT || 4000,
     }
 }
-export default configurations;
+module.exports= configurations;
